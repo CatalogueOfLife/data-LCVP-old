@@ -36,6 +36,7 @@ print("Writing species data...")
 with zipfile.ZipFile(ZIP_FILE) as zf:
   with io.TextIOWrapper(zf.open(DATA_FILE), encoding="Latin-1") as f:
     with open('NameUsage.tsv', 'w') as tf:
+      genera={} # prefix by family
       families={}
       orders={}
       writer = csv.writer(tf, delimiter='\t')
@@ -43,12 +44,11 @@ with zipfile.ZipFile(ZIP_FILE) as zf:
       csv_reader = csv.reader(f, delimiter='\t')
       next(csv_reader)
       for line in csv_reader:
-
-        # seen the family before?
         name=line[0]
-        status=line[1]
-        family=line[5]
         ID=idfy(name)
+        status=line[1]
+        # seen the family before?
+        family=line[5]
         if family not in families:
           order=line[6]
           if order not in orders:
@@ -60,7 +60,13 @@ with zipfile.ZipFile(ZIP_FILE) as zf:
           accepted=idfy(line[4])
           writer.writerow([ID, accepted, '', name, status, ''])
         else:
-          writer.writerow([ID, family, '', name, status, ''])
+          genus=name.partition(' ')[0]
+          genusID=family+"-"+genus
+          if genusID not in genera:
+            genera[genusID]=True
+            writer.writerow([genusID, family, "genus", genus, 'accepted', ''])
+          rank='species' if name.count(' ') == 1 else ''
+          writer.writerow([ID, genusID, rank, name, status, ''])
 
 
 # zip up nameusage, bibref & metadata
