@@ -1,0 +1,69 @@
+title: The Leipzig catalogue of vascular plants
+alias: LCVP
+description: | 
+  The Leipzig catalogue of vascular plants provides an updated and much improved reference list of 1,315,562 scientific names 
+  for all described vascular plant species globally. 
+  The Leipzig Catalogue of Vascular Plants (LCVP; version 1.0.3) contains 351,180 accepted species names (plus 6,160 natural hybrids), 
+  within 13,460 genera, 564 families and 84 orders. 
+  The LCVP a) contains more information on the taxonomic status of global plant names than any other similar resource, 
+  and b) significantly improves the reliability of our knowledge by e.g. resolving the taxonomic status of ~181,000 names compared to The Plant List, the up to date most commonly used plant name resource. 
+  We used ~4,500 publications, existing relevant databases and available studies on molecular phylogenetics to construct a robust reference backbone. 
+
+  A guiding principle during the compilation of the LCVP was to avoid polyphyletic genera, which are frequent in TPL, 
+  either by splitting genera (e.g. separating Goeppertia from Calathea) 
+  or fusing them (e.g. Stapelia and Duvalia in Ceropegia). 
+  However, we did not recombine any species name in the LCVP and in cases of unclear phylogenetic position of genera, we used the conservative (i.e. existing) name.
+
+  For details on methods see https://doi.org/10.1038/s41597-020-00702-z.
+
+organisations:         
+  - department: Systematic Botany and Functional Biodiversity / Botanical Garden
+    name: Institute of Biology, Leipzig University
+    city: Leipzig
+    country: Germany
+  - name: German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig
+    city: Leipzig
+    country: Germany
+
+# single point of contact for questions
+contact: 
+  - givenName: Martin
+    familyName: Freiberg
+    orcid: 0000-0002-6036-5293
+
+authors:
+  - givenName: Martin
+    familyName: Freiberg
+    email: freiberg@uni-leipzig.de
+    orcid: 0000-0002-6036-5293
+  - givenName: Marten
+    familyName: Winter
+    orcid: 
+  - givenName: Alessandro
+    familyName: Gentile
+    email: gentile.alessandro@gmail.com
+    orcid: 
+  - givenName: Alexander
+    familyName: Zizka
+    email: alexander.zizka@idiv.de
+    orcid: 
+  - givenName: Alexandra Nora
+    familyName: Muellner-Riehl
+    orcid: 
+  - givenName: Alexandra
+    familyName: Weigelt
+    orcid: 
+  - givenName: Christian
+    familyName: Wirth
+    orcid: 
+
+geographicScope: global
+taxonomicScope: vascular plants
+version: 1.04
+released: 2020-12-14      
+website: https://github.com/idiv-biodiversity/LCVP
+code: botanical
+license: CC-BY
+logo: https://www.fishbase.de/images/gifs/fblogo_new.gif 
+citation: Freiberg, M., Winter, M., Gentile, A. et al. LCVP, The Leipzig catalogue of vascular plants, a new taxonomic reference list for all known vascular plants. (v1.04, 2020). 
+
