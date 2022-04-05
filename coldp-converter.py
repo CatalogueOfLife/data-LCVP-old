@@ -73,6 +73,7 @@ with zipfile.ZipFile(ZIP_FILE) as zf:
 print("Bundling ZIP archive...")
 coldp = zipfile.ZipFile('lcvp.zip', 'w', zipfile.ZIP_DEFLATED)
 coldp.write('metadata.yaml')
+coldp.write('logo.jpg')
 coldp.write(BIB_FILE, arcname='reference.bib')
 coldp.write('nameusage.tsv')
 coldp.close()

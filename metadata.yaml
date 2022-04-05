@@ -1,5 +1,7 @@
 title: The Leipzig catalogue of vascular plants
 alias: LCVP
+version: 1.04
+released: 2020-12-14      
 description: | 
   The Leipzig catalogue of vascular plants provides an updated and much improved reference list of 1,315,562 scientific names 
   for all described vascular plant species globally. 
@@ -59,11 +61,6 @@ authors:
 
 geographicScope: global
 taxonomicScope: vascular plants
-version: 1.04
-released: 2020-12-14      
 website: https://github.com/idiv-biodiversity/LCVP
 code: botanical
 license: CC-BY
-logo: https://www.fishbase.de/images/gifs/fblogo_new.gif 
-citation: Freiberg, M., Winter, M., Gentile, A. et al. LCVP, The Leipzig catalogue of vascular plants, a new taxonomic reference list for all known vascular plants. (v1.04, 2020). 
-
